@@ -90,7 +90,7 @@ export default function NavBar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white dark:bg-neutral-950 border-t border-gray-200 dark:border-neutral-800 px-8 py-6 space-y-6">
+        <div className="md:hidden bg-white dark:bg-neutral-950 border-t border-gray-200 dark:border-neutral-800 px-8 py-6 flex flex-col gap-6">
 
           <Link onClick={() => setMenuOpen(false)} className={navLinkClass("home")} href="#home">Home</Link>
           <Link onClick={() => setMenuOpen(false)} className={navLinkClass("about")} href="#about">About</Link>
